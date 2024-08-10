@@ -3,12 +3,20 @@ version '1.0-SNAPSHOT'
 
 buildscript {
     repositories {
+        maven { url 'https://mirrors.cloud.tencent.com/gradle/'}
+        maven { url 'https://mirrors.cloud.tencent.com/nexus/repository/maven-public/' }
+        maven { url 'https://maven.aliyun.com/repository/gradle-plugin' }
+        maven { url 'https://maven.aliyun.com/repository/jcenter' }
+        maven { url 'https://maven.aliyun.com/repository/google' }
+        maven { url 'https://maven.aliyun.com/repository/public' }
+        maven { url 'https://maven.aliyun.com/repository/gradle-plugin'}
+        maven {url 'https://developer.huawei.com/repo/'}
         google()
         jcenter()
     }
 
     dependencies {
-        classpath 'com.android.tools.build:gradle:3.6.2'
+        classpath 'com.android.tools.build:gradle:7.3.1'
     }
 }
 
@@ -22,10 +30,10 @@ rootProject.allprojects {
 apply plugin: 'com.android.library'
 
 android {
-    compileSdkVersion 28
+    compileSdkVersion 34
 
     defaultConfig {
-        minSdkVersion 16
+        minSdkVersion 22
     }
     lintOptions {
         disable 'InvalidPackage'

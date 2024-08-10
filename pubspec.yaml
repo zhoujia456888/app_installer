@@ -6,7 +6,7 @@ documentation: https://github.com/yy1300326388/app_installer/tree/master/example
 publish_to: https://pub.dev
 
 environment:
-  sdk: ">=2.1.0 <3.0.0"
+  sdk: '>=2.18.5 <3.0.0'
   flutter: ">=1.12.0"
 
 dependencies:
